@@ -1,21 +1,8 @@
-# Galaxy Profile README Configuration
-# Copy this file to config.yml and customize it to make it your own!
-#
-# Usage:
-#   cp config.example.yml config.yml
-#   # Edit config.yml with your details
-#   python -m generator.main
-#
-# Demo mode (no API calls, uses this file directly):
-#   python -m generator.main --demo
-
-# Your GitHub username (required)
 username: thempos
 
-# Profile information displayed in the galaxy header
 profile:
-  name: "Timothée Campos"
-  tagline: "Full Stack Software Engineer"
+  name: "Timothée's Galaxy"
+  tagline: "Software Engineer"
   company: "Itaú Unibanco"
   location: "São Paulo, SP"
   bio: |
@@ -23,40 +10,41 @@ profile:
     Interested in engineering, UX/UI, and using AI in practical ways when it helps.
   philosophy: '"If it feels too easy, it’s because I haven’t found a way to give myself a headache yet.”"'
 
-# Social links displayed at the bottom of the profile
 social:
   email: "thempos@icloud.com"
   linkedin: "https://www.linkedin.com/in/thempos"
   website: "https://thempos.com.br"
 
-# Galaxy arms represent your core focus areas
-# Each arm spirals out from the center with its own color and tech items
-# Available colors: "synapse_cyan", "dendrite_violet", "axon_amber"
 galaxy_arms:
-  - name: "Frontend"
+  - name: "Client Engineering"
     color: "dendrite_violet"
     items:
-      - "TypeScript"
       - "React"
-      - "Jetpack Compose"
-  - name: "Backend"
+      - "Vue.js"
+      - "TypeScript"
+      - "Tailwind CSS"
+      - "Swift"
+      - "React Native"
+
+  - name: "Services"
     color: "synapse_cyan"
     items:
-      - "Ktor"
       - "Express.js"
-      - "Django"
-  - name: "DevOps"
+      - "Python"
+      - "Kotlin"
+      - "Java"
+      - "AWS"
+      - "Docker"
+
+  - name: "Data Layer"
     color: "axon_amber"
     items:
-      - "Docker"
-      - "GitHub Actions"
-      - "AWS"
-
-# Featured projects shown as constellation stars
-# Each project needs:
-#   repo: "owner/repo-name"   — GitHub repository path
-#   arm: 0-2                  — Which galaxy arm to associate with (index)
-#   description: "..."        — Short description shown on the card
+      - "MySQL"
+      - "MongoDB"
+      - "Redis"
+      - "Cassandra"
+      - "SQLite"
+      - "Firebase"
 projects:
   - repo: "thempos/fireticket"
     arm: 0
@@ -65,8 +53,6 @@ projects:
     arm: 1
     description: "Mobile app built with React Native and Node.js, focused on studying and integrating AI models for text and image generation. Uses DALL·E (OpenAI) and Sabiá-3 (Maritaca AI) APIs."
 
-# Theme color overrides (optional — defaults to deep space palette)
-# All values must be valid hex color codes (#RRGGBB)
 theme:
   void: "#080c14"              # Darkest background
   nebula: "#0f1623"            # Card backgrounds
@@ -78,7 +64,6 @@ theme:
   text_dim: "#94a3b8"          # Secondary text
   text_faint: "#64748b"        # Muted text, labels
 
-# Stats configuration — which metrics to show on the telemetry card
 stats:
   metrics:
     - "commits"
@@ -87,11 +72,11 @@ stats:
     - "issues"
     - "repos"
 
-# Language display settings
 languages:
-  exclude:                     # Languages to hide from the telemetry chart
+  exclude:                     
     - "HTML"
     - "CSS"
     - "Shell"
     - "Makefile"
+    - "Dockerfile"
   max_display: 8               # Maximum number of languages to show
