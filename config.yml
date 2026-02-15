@@ -1,7 +1,7 @@
 username: thempos
 
 profile:
-  name: "Timothée's Galaxy"
+  name: "Timothée's galaxy"
   tagline: "Software Engineer"
   company: "Itaú Unibanco"
   location: "São Paulo, SP"
@@ -79,4 +79,4 @@ languages:
     - "Shell"
     - "Makefile"
     - "Dockerfile"
-  max_display: 8               # Maximum number of languages to show
+  max_display: 8
